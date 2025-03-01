@@ -1,0 +1,93 @@
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: black;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.selectorContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.select {
+    margin-top: 20px;
+    width: 45%;
+}
+
+.button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pokemonContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pokemonCard {
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.34);
+    & img {
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+    .hp {
+        color: greenyellow;
+    }
+    .attack {
+        color: red;
+    }
+    .defense {
+        color: orange;
+    }
+    .speed {
+        color: white;
+    }
+}
+
+.resultModal {
+    margin-top: 250px;
+}
+
+.pokemonImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.pokemonName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.stats p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
