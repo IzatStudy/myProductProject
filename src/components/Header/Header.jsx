@@ -1,5 +1,5 @@
 import classes from './Header.module.scss';
-import {NavLink, useNavigate} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 import {DownOutlined} from '@ant-design/icons';
 import { Dropdown, Space} from 'antd';
 import React from "react";
@@ -9,17 +9,15 @@ const { Title } = Typography;
 
 const items = [
     {
-        label: <a href="/">Главная, О нас, Информация</a>,
+        label: <Link to="/">Главная, О нас, Информация</Link>,
         key: "1",
     },
     {
-        label: <a href="/tariffs">Тарифы и удобные инструменты для управления</a>,
+        label: <Link to="/tariffs">Тарифы и удобные инструменты для управления</Link>,
         key: "2",
     },
     {
-        label: <a href="/warehouse">Удобная система для управления товарами, остатками и логистикой.
-
-        </a>,
+        label: <Link to="/warehouse">Удобная система для управления товарами, остатками и логистикой.</Link>,
         key: "3",
     },
 ];

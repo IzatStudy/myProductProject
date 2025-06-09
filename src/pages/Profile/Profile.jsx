@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../../store/userSlice";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import classes from "./Profile.module.scss";
 import { Button, Dropdown, Space } from "antd";
 import { DownOutlined } from "@ant-design/icons";
@@ -19,14 +19,14 @@ const Profile = () => {
 
     const profileItems = [
         {
-            label: <span>Профиль</span>,
-            key: '1',
-        },
-        {
             label: <span onClick={useLogout} style={{cursor: 'pointer'}}>Выйти</span>,
-            key: '2',
+            key: '1',
         }
     ];
+
+    const authBtn = () => {
+       navigate("/login");
+    }
 
 
     return (
@@ -50,7 +50,7 @@ const Profile = () => {
                     </div>
                 ) : (
                     <div>
-                        <a href="/login"><Button className={classes.authBtn} type={"primary"}>Авторизация</Button></a>
+                        <Button onClick={authBtn} className={classes.authBtn} type={"primary"}>Авторизация</Button>
                     </div>
                 )}
             </div>
