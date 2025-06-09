@@ -1,0 +1,139 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    position: revert;
+    z-index: 2;
+    @media (max-width: 768px ) {
+        width: 100%;
+        height: auto;
+        flex-flow: column;
+    }
+}
+
+.headerInner {
+    position: revert;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: row;
+    background: #282c34;
+    background-size: cover;
+    z-index: 2;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        height: auto;
+    }
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.authBtn {
+    @media (max-width: 662px) {
+        display: none;
+    }
+}
+
+.labelBlock {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    flex-direction: row;
+    gap: 20px;
+    @media (max-width: 1215px ) {
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.labels {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    flex-grow: 1;
+    cursor: pointer;
+    &:hover {
+        text-shadow: 0 0 3px white;
+        transition: 0.5s;
+        background: #22262e;
+    }
+    @media (max-width: 818px) {
+        width: 70px;
+    }
+    @media (max-width: 707px) {
+        width: 55px;
+        font-size: 16px;
+    }
+    @media (max-width: 480px) {
+        font-size: 14px;
+        height: 50px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+    h2 {
+        color: #fff;
+        font-size: 30px;
+        @media (max-width: 1424px) {
+            font-size: 25px;
+        }
+        @media (max-width: 1215px) {
+            font-size: 15px;
+            margin: 5px auto;
+        }
+        @media (max-width: 1070px) {
+            font-size: 13px;
+            margin: 5px auto;
+        }
+        @media (max-width: 1024px) {
+            font-size: 13px;
+        }
+        @media (max-width: 910px) {
+            display: none;
+        }
+        @media (max-width: 480px) {
+            display: flex;
+            font-size: 16px;
+        }
+    }
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 20%;
+        @media (max-width: 1070px) {
+            margin: 0 10px;
+        }
+        @media (max-width: 778px) {
+            width: 60px;
+            height: 60px;
+        }
+        @media (max-width: 480px) {
+            width: 50px;
+            height: 50px;
+        }
+        @media (max-width: 320px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

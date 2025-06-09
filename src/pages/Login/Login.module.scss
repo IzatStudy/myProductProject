@@ -1,0 +1,61 @@
+.loginBlock {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+
+}
+
+
+.form > * {
+    margin-bottom: 16px;
+}
+
+
+.loginCard {
+    text-align: center;
+    width: 300px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(85, 84, 84, 0);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    h2 {
+        color: white;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+    button {
+        width: 120px;
+        margin: 10px auto; ;
+    }
+}
+
+.inputEmail {
+    padding-left: 10px;
+    width: 210px;
+    height: 32px;
+    border: dodgerblue solid 1px;
+    border-radius: 5px;
+}
+
+.text {
+    width: 210px;
+    background-color: white;
+    border-radius: 3px;
+    color: red;
+    margin-bottom: 10px;
+}

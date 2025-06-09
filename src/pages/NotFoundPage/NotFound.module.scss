@@ -1,0 +1,113 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.pageBlock {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: #282c34;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+    }
+    @media (max-width: 1024px) {
+        width: 180px;
+        height: 38px;
+        font-size: 15px;
+    }
+    @media (max-width: 768px) {
+        width: 160px;
+        height: 36px;
+        font-size: 14px;
+    }
+    @media (max-width: 480px) {
+        width: 140px;
+        height: 34px;
+        font-size: 13px;
+    }
+}
+
+.pageForm {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pageTitle {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    @media (max-width: 1024px) {
+        width: 400px;
+    }
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+.errorTitle {
+    font-size: 50px;
+    color: #ff8000;
+    text-align: center;
+    @media (max-width: 1024px) {
+        font-size: 40px;
+    }
+    @media (max-width: 768px) {
+        font-size: 36px;
+    }
+    @media (max-width: 480px) {
+        font-size: 28px;
+    }
+}
+
+.errorText {
+    font-size: 30px;
+    color: #282c34;
+    text-align: center;
+    @media (max-width: 1024px) {
+        font-size: 24px;
+    }
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+    @media (max-width: 480px) {
+        font-size: 18px;
+    }
+}

@@ -1,27 +1,73 @@
-import styles from './Header.module.css';
+import classes from './Header.module.scss';
 import {NavLink} from "react-router-dom";
+import {DownOutlined} from '@ant-design/icons';
+import { Dropdown, Space} from 'antd';
+import React from "react";
+import Profile from "../../pages/Profile/Profile.jsx";
+import { Typography } from 'antd';
+const { Title } = Typography;
 
+const items = [
+    {
+        label: <a href="http://localhost:5173/">Главная, О нас, Информация</a>,
+        key: "1",
+    },
+    {
+        label: <a href="http://localhost:5173/tariffs">Тарифы и удобные инструменты для управления</a>,
+        key: "2",
+    },
+    {
+        label: <a href="http://localhost:5173/warehouse">Удобная система для управления товарами, остатками и логистикой.
+
+        </a>,
+        key: "3",
+    },
+];
 
 const pages = [
     {
-        label: "PokemonPage",
+        label: "Главная",
         link: "/",
     },
     {
-        label: "PokemonArena",
-        link: "/arena",
+        label: "Тарифы",
+        link: "/tariffs",
+    },
+    {
+        label: "Склад",
+        link: "/warehouse",
     }
 ];
 
 const Header = () => {
     return (
-        <div className={styles.header}>
-            <div className={styles.icon}></div>
-            {pages.map((item,key) => (
-                <NavLink key={key} to={item.link}>
-                    {item.label}
-                </NavLink>
-            ))}
+        <div className={classes.header}>
+            <div className={classes.headerInner}>
+                <div className={classes.logo}>
+                    <NavLink to={"/"} >
+                        <img src="public/warehouseIcon.png" alt="logo"/>
+                    </NavLink>
+                    <Title level={2}>Company for Warehouse Management System</Title>
+                </div>
+                <div className={classes.labelBlock}>
+                    {pages.map((item, key) => (
+                        <NavLink key={key} to={item.link}>
+                            <div className={classes.labels}>{item.label}</div>
+                        </NavLink>
+                    ))}
+                    <Dropdown menu={{items}}>
+                        <a onClick={e => e.preventDefault()} >
+                            <Space style={{color: 'white', margin: "10px"}} >
+                                Услуги
+                                <DownOutlined/>
+                            </Space>
+                        </a>
+                    </Dropdown>
+                </div>
+                <div className={classes.authBtn}>
+                    <Profile/>
+                </div>
+            </div>
         </div>
     );
 };

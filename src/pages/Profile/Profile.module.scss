@@ -1,0 +1,49 @@
+.profile {
+    padding: 20px;
+    text-align: center;
+}
+
+.profileBlock {
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 3px;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: white;
+        position: relative;
+        left: 45px;
+    }
+}
+
+.authBtn {
+    width: 100%;
+    @media (max-width: 1024px) {
+        width: 100px;
+        margin: 0 auto;
+    }
+}
+
+.profileForm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.characterIcon {
+    width: 30px;
+    height: 30px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

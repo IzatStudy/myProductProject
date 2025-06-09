@@ -1,0 +1,96 @@
+.footer {
+    background-color: #282c34;
+    padding: 60px 20px;
+    color: white;
+    @media (max-width: 1424px ) {
+        padding: 50px 20px;
+    }
+    @media (max-width: 1215px ) {
+        padding: 40px 20px;
+    }
+    @media (max-width: 1024px) {
+        padding: 30px 20px;
+    }
+    @media (max-width: 768px) {
+        padding: 20px 20px;
+    }
+    @media (max-width: 480px) {
+        padding: 10px 20px;
+    }
+}
+
+.footerInner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        line-height: 1.6;
+    }
+}
+
+.red {
+    color: #D91F3C;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.phoneNumber {
+    font-size: 18px;
+    :hover {
+        color: dodgerblue ;
+    }
+}
+
+.footerForm {
+    min-width: 150px;
+    li {
+        :active {
+            text-shadow: 0 0 3px red;
+        }
+        :hover {
+            color: red;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.footerBottom {
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+    img {
+        width: 24px;
+        height: 24px;
+    }
+    @media (max-width: 768px) {
+        margin-top: 10px;
+    }
+}
