@@ -18,8 +18,8 @@ const Footer = () => {
                             <h3 className={classes.red}>Страницы</h3>
                             <ul>
                                 <li><Link to="/"><p>Главная</p></Link></li>
-                                <li><Link to="/warehouse"><p>Склад</p></Link></li>
                                 <li><Link to="/tariffs"><p>Тарифы</p></Link></li>
+                                <li><Link to="/warehouse"><p>Склад</p></Link></li>
                                 <li><Link to="/"><p>О нас</p></Link></li>
                                 <li><Link to="/"><p>Информация</p></Link></li>
                             </ul>
