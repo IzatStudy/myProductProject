@@ -30,7 +30,7 @@
         list-style: none;
         padding: 0;
     }
-    a {
+    p {
         color: white;
         text-decoration: none;
         line-height: 1.6;
@@ -44,12 +44,14 @@
     margin-bottom: 10px;
 }
 
-.phoneNumber {
+.phoneNumber p {
+    color: white;
     font-size: 18px;
-    :hover {
+    &:hover {
         color: dodgerblue ;
     }
 }
+
 
 .footerForm {
     min-width: 150px;

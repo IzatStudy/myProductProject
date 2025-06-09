@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Footer.module.scss';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -16,24 +17,24 @@ const Footer = () => {
                         <div className={classes.footerForm}>
                             <h3 className={classes.red}>Страницы</h3>
                             <ul>
-                                <li><a href="/">Главная</a></li>
-                                <li><a href="/warehouse">Склад</a></li>
-                                <li><a href="/tariffs">Тарифы</a></li>
-                                <li><a href="">О нас</a></li>
-                                <li><a href="">Информация</a></li>
+                                <li><Link to="/"><p>Главная</p></Link></li>
+                                <li><Link to="/warehouse"><p>Склад</p></Link></li>
+                                <li><Link to="/tariffs"><p>Тарифы</p></Link></li>
+                                <li><Link to="/"><p>О нас</p></Link></li>
+                                <li><Link to="/"><p>Информация</p></Link></li>
                             </ul>
                         </div>
                         <div className={classes.footerForm}>
                             <h3 className={classes.red}>Компания</h3>
                             <ul>
-                                <li><a href="">Политика Cookie</a></li>
-                                <li><a href="">Политика конфиденциальности</a></li>
-                                <li><a href="">Контакты</a></li>
+                                <li><Link to="/"><p>Политика Cookie</p></Link></li>
+                                <li><Link to="/"><p>Политика конфиденциальности</p></Link></li>
+                                <li><Link to="/"><p>Контакты</p></Link></li>
                             </ul>
                             <br/>
-                            <div>
-                                <p className={classes.phoneNumber}><a href="">&#128222; +996 700 00 00 00</a></p>
-                                <p className={classes.phoneNumber}><a href="">&#128222; +996 500 00 00 00</a></p>
+                            <div className={classes.phoneNumber}>
+                                <Link to="/"><p>&#128222; +996 700 00 00 00</p></Link>
+                                <Link to="/"><p>&#128222; +996 500 00 00 00</p></Link>
                             </div>
                         </div>
                     </div>
