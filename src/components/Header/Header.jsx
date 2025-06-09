@@ -1,5 +1,5 @@
 import classes from './Header.module.scss';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import {DownOutlined} from '@ant-design/icons';
 import { Dropdown, Space} from 'antd';
 import React from "react";
@@ -9,15 +9,15 @@ const { Title } = Typography;
 
 const items = [
     {
-        label: <a href="http://localhost:5173/">Главная, О нас, Информация</a>,
+        label: <a href="/">Главная, О нас, Информация</a>,
         key: "1",
     },
     {
-        label: <a href="http://localhost:5173/tariffs">Тарифы и удобные инструменты для управления</a>,
+        label: <a href="/tariffs">Тарифы и удобные инструменты для управления</a>,
         key: "2",
     },
     {
-        label: <a href="http://localhost:5173/warehouse">Удобная система для управления товарами, остатками и логистикой.
+        label: <a href="/warehouse">Удобная система для управления товарами, остатками и логистикой.
 
         </a>,
         key: "3",
@@ -45,7 +45,7 @@ const Header = () => {
             <div className={classes.headerInner}>
                 <div className={classes.logo}>
                     <NavLink to={"/"} >
-                        <img src="public/warehouseIcon.png" alt="logo"/>
+                        <img src="/warehouseIcon.png" alt="logo"/>
                     </NavLink>
                     <Title level={2}>Company for Warehouse Management System</Title>
                 </div>
