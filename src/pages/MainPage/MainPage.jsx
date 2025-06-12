@@ -29,113 +29,80 @@ const MainPage = () => {
     const products = [
         {
             id: 1,
-            title: "Продукт 1",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum",
-            image: "/",
+            title: "Автоматизация учёта",
+            content: "Интеллектуальная система учёта товаров с возможностью сканирования штрихкодов, отслеживания остатков и генерации отчетов в реальном времени.",
+            image: "/accounting.png",
         },
         {
             id: 2,
-            title: "Продукт 2",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum",
-            image: "/",
+            title: "Интеграция",
+            content: "Бесшовная интеграция с 1С, Bitrix24, amoCRM и другими системами для упрощения документооборота и обработки заказов.",
+            image: "/integration.avif",
         },
         {
             id: 3,
-            title: "Продукт 3",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum",
-            image: "/",
+            title: "Управление поставками",
+            content: "Контроль сроков поставок, автоматические уведомления и визуализация цепочки поставки от производителя до клиента.",
+            image: "/warehouseIcon.png",
         }
-    ]
+    ];
+
 
     const tab = [
         {
             id: 1,
-            title: "1",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum"
+            title: "Кто мы?",
+            content: "Мы — команда профессионалов, создающих современные решения для автоматизации складского учета и логистики на базе веб-технологий.",
         },
         {
             id: 2,
-            title: "2",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum"
+            title: "Наша миссия",
+            content: "Предоставлять бизнесу удобные, масштабируемые и надёжные инструменты для управления запасами и цепочками поставок.",
         },
         {
             id: 3,
-            title: "3",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum"
+            title: "Почему мы?",
+            content: "Более 10 лет опыта, поддержка 24/7, индивидуальные решения под потребности любого склада — от малого до корпоративного.",
         },
         {
             id: 4,
-            title: "4",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum"
+            title: "Наша команда",
+            content: "Разработчики, аналитики, логисты и проектные менеджеры с глубокой экспертизой в области складской логистики и IT.",
         },
         {
             id: 5,
-            title: "5",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum"
+            title: "Технологии",
+            content: "Используем React, Node.js, PostgreSQL, а также внедряем AI и машинное обучение для анализа данных и прогноза спроса.",
         },
         {
             id: 6,
-            title: "6",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum"
+            title: "Будущее",
+            content: "Развиваем мобильные решения, внедряем голосовое управление и готовим модуль AR-навигации по складу.",
         },
-    ]
+    ];
+
 
     const information = [
         {
             id: 1,
             title: "Доставка точно в срок",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum",
+            content: "Благодаря тесной интеграции с транспортными компаниями и гибкому планировщику логистики — мы соблюдаем сроки с точностью до часа.",
             image: "/informIcon.svg",
         },
         {
             id: 2,
             title: "Надежность",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum",
+            content: "Облачное хранилище, ежедневное резервное копирование, защита от сбоев и DDoS — ваши данные под надежной защитой.",
             image: "/informIcon2.png",
         },
         {
             id: 3,
             title: "Честные расчеты",
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit " +
-                "Aliquid assumenda cum dolore dolorem eos," +
-                "facilis ipsam iure iusto laboriosam molestiae non" +
-                "perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum",
+            content: "Прозрачное ценообразование без скрытых комиссий, гибкие тарифы и детальные отчеты по всем операциям.",
             image: "/informIcon3.webp",
         },
-    ]
+    ];
+
 
     return (
          <>
@@ -150,19 +117,20 @@ const MainPage = () => {
                                  autoplay={{delay: 3000, disableOnInteraction: false,}}>
                              <SwiperSlide>
                                  <img src="/warehouseImage1.jpg" alt="slide1"/>
-                                 <h3>Система управления складом товаров 1</h3>
+                                 <h3>Эффективный контроль и учёт складских запасов</h3>
                              </SwiperSlide>
                              <SwiperSlide>
                                  <img src="/warehouseImage2.jpg" alt="slide2"/>
-                                 <h3>Система управления складом товаров 2</h3>
+                                 <h3>Интеграция с учётными системами и полная автоматизация</h3>
                              </SwiperSlide>
                              <SwiperSlide>
                                  <img src="/warehouseImage3.jpg" alt="slide3"/>
-                                 <h3>Система управления складом товаров 3</h3>
+                                 <h3>Оптимизация логистики и повышение производительности</h3>
                              </SwiperSlide>
                          </Swiper>
                      </div>
-                     <div>
+                     <div className={classes.productsInner}>
+                         <h3>Удобства</h3>
                          <div className={classes.productsBlock}>
                              {products.map((product) => (
                                  <div key={product.id} className={classes.products}>
@@ -180,14 +148,13 @@ const MainPage = () => {
                          <div className={classes.mainBlock}>
                              <video src="/4477603-hd_1280_720_30fps.mp4" loop muted autoPlay></video>
                              <div className={classes.mainInner}>
-                                 <img src="/warehouseIcon.png" alt="image"/>
+                                 <img src="/accounting.png" alt="image"/>
                                  <div>
                                      <h3>Система управления складом товаров</h3>
                                      <p>
-                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                         Aliquid assumenda cum dolore dolorem eos,
-                                         facilis ipsam iure iusto laboriosam molestiae non
-                                         perferendis placeat quasi ratione reiciendis reprehenderit sint ut voluptatum.
+                                         Наша система управления складом автоматизирует все ключевые процессы: от приёмки и размещения товаров до их выдачи и инвентаризации.
+                                         Она позволяет контролировать остатки в реальном времени, отслеживать движения товаров, снижать количество ошибок и повышать эффективность работы сотрудников.
+                                         Благодаря интуитивному интерфейсу и гибким настройкам, решение подходит как для небольших складов, так и для крупных логистических центров.
                                      </p>
                                  </div>
                              </div>
@@ -211,12 +178,9 @@ const MainPage = () => {
                                  <img src="/phoneImage.webp" alt="image"/>
                             </div>
                             <div className={classes.adcContent}>
-                                <h2>Title</h2>
+                                <h2>Мобильное приложение для Android и iOS</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Doloribus in maiores nam nobis soluta.
-                                    A doloribus enim eos ex officiis repellat unde ut!
-                                    Ab accusamus, alias blanditiis cumque fugiat ipsam?
+                                    Управляйте складом прямо с телефона: сканируйте штрихкоды, отслеживайте остатки, оформляйте заказы и получайте уведомления в режиме реального времени.
                                 </p>
                                 <div className={classes.appBlock}>
                                     <div className={classes.appImage}>
